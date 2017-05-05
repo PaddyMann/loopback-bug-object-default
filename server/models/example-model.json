@@ -1,0 +1,19 @@
+{
+  "name": "ExampleModel",
+  "plural": "example-models",
+  "base": "PersistedModel",
+  "properties": {
+    "misc": {"type": "string"},
+    "meta": {"type": "object", "default": {}}
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "*"
+    }
+  ],
+  "methods": {}
+}
